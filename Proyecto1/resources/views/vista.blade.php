@@ -61,30 +61,23 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-            
+            .image-person img{
+        display: block;
+        margin: auto;
+        width: 300px;
+        left: 0;
+        right: 0;
+        top:0;
+        bottom: 0;
+        position: absolute;
+        border-radius: 200px;
+    }
         </style>
     </head>
     <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('vista') }}">Vista</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
+    <div class="image-person">
+        <img src="img/felipito.jpg" alt="">
+    </div>
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
